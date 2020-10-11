@@ -23,9 +23,9 @@ const Login = () => {
     const onSubmit = e => {
         e.preventDefault();
 
-        // Validacion
+        // Validar que no haya campos vacios
 
-        //Pasarlo al action
+        // Pasarlo al action
 
     }
 
