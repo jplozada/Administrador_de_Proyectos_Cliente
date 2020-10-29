@@ -9,10 +9,9 @@ const RutaPrivada = ({component: Component, ...props}) => {
 
     useEffect(() => {
         usuarioAutenticado();
-
-        // eslint-disable-next-line
         // if there is a loop in the app
-    }, [usuarioAutenticado])
+        // eslint-disable-next-line
+    }, [])
 
     return (
         <Route {...props} render = {
