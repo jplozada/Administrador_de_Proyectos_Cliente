@@ -50,7 +50,7 @@ const FormTarea = () => {
 
         // Validar
         if(nombre.trim() === ''){
-            validarTarea(true);
+            validarTarea();
             return;
         }
 
@@ -66,9 +66,9 @@ const FormTarea = () => {
             // Elimina tareaseleccionada del state
             limpiarTarea();
         }
-
+ 
         // Obtener y filtrar las tareas del proyecto actual
-        obtenerTareas(proyectoActual.id);
+        obtenerTareas(proyectoActual._id);
 
         // Reiniciar el form
         guardarTarea({
